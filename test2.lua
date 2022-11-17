@@ -332,7 +332,7 @@ TpTool.Font = Enum.Font.SourceSans
 TpTool.Text = "Tp tool"
 TpTool.TextColor3 = Color3.fromRGB(0, 0, 0)
 TpTool.TextSize = 14.000
-tptoolBtn.MouseButton1Down:Connect(function()
+Tptool.MouseButton1Down:Connect(function()
 
 	mouse = game.Players.LocalPlayer:GetMouse()
 	tool = Instance.new("Tool")
@@ -367,6 +367,7 @@ NoClipBtn_2.Font = Enum.Font.SourceSans
 NoClipBtn_2.Text = "Headless"
 NoClipBtn_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 NoClipBtn_2.TextSize = 14.000
+NoclipBtn_2.MouseButton1Down:Connect(function()
 
 for i,v in next, game:GetService("Players").LocalPlayer.Character:GetDescendants() do
 	if v:IsA("BasePart") and v.Name ~="HumanoidRootPart" then 
@@ -912,4 +913,6 @@ local function IBLHI_fake_script() -- ScreenGui.CloseGUI
 	
 	
 end
-coroutine.wrap(IBLHI_fake_script)() 
+coroutine.wrap(IBLHI_fake_script)()
+
+end)
