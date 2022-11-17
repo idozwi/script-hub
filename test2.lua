@@ -1,4 +1,4 @@
-  local ScreenGui = Instance.new("ScreenGui")
+local ScreenGui = Instance.new("ScreenGui")
 local GUI = Instance.new("Frame")
 local FlyBtn = Instance.new("TextButton")
 local NoClipBtn = Instance.new("TextButton")
